@@ -1,7 +1,6 @@
 .bar
 {
     padding: 1rem 0rem;
-    background-color: rgba(15,10,222,0.2);
     color: white;
     width: 100%;
     height: auto;
@@ -26,11 +25,14 @@
     font-size: clamp(10px, 1vw, 100000px);
     display: inline-block;
 }
+#navBarButton:hover
+{
+    color: #e0876a;
+}
 .header
 {
     padding-top: 30px;
     padding-bottom: 20px;
-    color: black;
     width:auto;
     height: auto;
 }
@@ -43,17 +45,64 @@
 #topBar *
 {
     text-decoration: none;
-    color: white;
+    color: #f9ccac;
     
 }
 li
 {
     list-style-type: none;
-    padding-left: 3.2%;
-    padding-right: 3.2%;
+    padding-left: 5%;
+    padding-right: 5%;
 
+}
+body
+{
+    margin: 0px;
+    padding-top: 0;
+    background: linear-gradient(to right, #141e30, #243b55);
+    background-repeat:no-repeat ;
+    color: #fbefcc;
+    text-align: center;
+}
+.bodysmall
+{
+    padding-left: 15%;
+    padding-right: 15%; 
+}
+a
+{
+    color: #fbefcc;
+}
+a:hover
+{
+    color: #e0876a;
+}
+a:active
+{
+    color: #fbefcc;
+}
+.header
+{
+    color:#f9ccac;
+}
+.sub_header
+{
+    color: #e0876a;
+}
+.setup img
+{
+    width: 90%;
+    height: auto;
 }
 .link_about_me
 {
-    target: blank;
+    font-size: 110%;
+}
+.about
+{
+    font-size: 110%;
+}
+.last
+{
+    padding-top: 10%;
 }
