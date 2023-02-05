@@ -94,9 +94,19 @@ a:active
 {
     color: #e0876a;
 }
+.swiper
+{
+    width: 80%;
+    height: fit-content;
+}
+.swiper-slide img
+{
+    width: 100%;
+    height: min-content;
+}
 .setup img
 {
-    width: 90%;
+    width: 80%;
     height: auto;
 }
 .link_about_me
@@ -113,7 +123,7 @@ a:active
 }
 .link_project img
 {
-    width: 50%;
+    width: 70%;
     height: auto;
 }
 .card-group
@@ -333,99 +343,6 @@ a:active
     background-image: url(Azusa\ card/AzusaS1.png);
     background-size: cover;
 }
-
-/*nodoka*/
-.card-group[data-index="5"] >.little-card:nth-child(1)
-{
-    background-image: url(Hoshino\ card/HoshinoS3.png);
-    background-size: cover;
-}
-.card-group[data-index="5"] >.big-card:nth-child(2)
-{
-    transform: translateX(-10%) rotate(-1deg);
-    background-image: url(Yuuka\ card/Normal\ Yuuka2.png);
-    background-size: cover;
-}
-.card-group[data-index="5"] >.little-card:nth-child(3)
-{
-    background-image: url(Yuuka\ card/Sport\ Yuuka3.png);
-    background-size: cover;
-}
-.card-group[data-index="5"] >.big-card:nth-child(4)
-{
-    transform: rotate(2deg);
-    background-image: url(Yuuka\ card/Normal\ Yuuka1.png);
-    background-size: cover;
-}
-.card-group[data-index="5"] >.little-card:nth-child(5)
-{
-    background-image: url(Yuuka\ card/Normal\ Yuuka4.png);
-    background-size: cover;
-}
-.card-group[data-index="5"] >.big-card:nth-child(6)
-{
-    transform: translateX(-6%) rotate(-3deg);
-    background-image: url(Yuuka\ card/Sport\ Yuuka2.png);
-    background-size: cover;
-}
-.card-group[data-index="5"] >.little-card:nth-child(7)
-{
-    background-image: url(Yuuka\ card/Normal\ Yuuka3.png);
-    background-size: cover;
-}
-.card-group[data-index="5"] >.big-card:nth-child(8)
-{
-    transform: translate(10%, 3%) rotate(5deg);
-    background-image: url(Yuuka\ card/Sport\ Yuuka1.png);
-    background-size: cover;
-}
-
-/*izuna*/
-.card-group[data-index="6"] >.little-card:nth-child(1)
-{
-    background-image: url(Hoshino\ card/HoshinoS3.png);
-    background-size: cover;
-}
-.card-group[data-index="6"] >.big-card:nth-child(2)
-{
-    transform: translateX(-10%) rotate(-1deg);
-    background-image: url(Yuuka\ card/Normal\ Yuuka2.png);
-    background-size: cover;
-}
-.card-group[data-index="6"] >.little-card:nth-child(3)
-{
-    background-image: url(Yuuka\ card/Sport\ Yuuka3.png);
-    background-size: cover;
-}
-.card-group[data-index="6"] >.big-card:nth-child(4)
-{
-    transform: rotate(2deg);
-    background-image: url(Yuuka\ card/Normal\ Yuuka1.png);
-    background-size: cover;
-}
-.card-group[data-index="6"] >.little-card:nth-child(5)
-{
-    background-image: url(Yuuka\ card/Normal\ Yuuka4.png);
-    background-size: cover;
-}
-.card-group[data-index="6"] >.big-card:nth-child(6)
-{
-    transform: translateX(-6%) rotate(-3deg);
-    background-image: url(Yuuka\ card/Sport\ Yuuka2.png);
-    background-size: cover;
-}
-.card-group[data-index="6"] >.little-card:nth-child(7)
-{
-    background-image: url(Yuuka\ card/Normal\ Yuuka3.png);
-    background-size: cover;
-}
-.card-group[data-index="6"] >.big-card:nth-child(8)
-{
-    transform: translate(10%, 3%) rotate(5deg);
-    background-image: url(Yuuka\ card/Sport\ Yuuka1.png);
-    background-size: cover;
-}
-
 .card-group:hover > .big-card:nth-child(2)
 {
     transform: translate(-75%,16%) rotate(-24deg);

@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Nguyên Nguyễn</title>
 
 </head>
@@ -62,16 +63,25 @@
             <h1>MY COMPUTER SETUP</h1>
         </div>
         <div class="setup">
-            <img src="photos/the very first setup.jpg" alt="first setup" title="The barebone"></img>
-            <p class="image_des">1.The setup when I first own a laptop.</p>
-            <img src="photos/setup with monitor first time.jpg" alt="first true laptop setup" title="The dual"></img>
-            <p class="image_des">2.The setup when I have my new monitor.</p>
-            <img src="photos/setup before moving.jpg" alt="memories" title="The station"></img>
-            <p class="image_des">3.The last picture of my setup at my old home that I had lived for 18 years.</p>
-            <img src="photos/setup after move in.jpg" alt="new desk, a makeover" title="The new inspiration"></img>
-            <p class="image_des">4.The setup at my new home.</p>
-            <img src="photos/setup4.jpg" alt="productivity" title="The workstation"></img>
-            <p class="image_des">5.The setup currently.</p>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="photos/the very first setup.jpg" alt="first setup" title="The barebone"></img></div>
+                <div class="swiper-slide"><img src="photos/setup with monitor first time.jpg" alt="first true laptop setup" title="The dual"></img></div>
+                <div class="swiper-slide"><img src="photos/setup before moving.jpg" alt="memories" title="The station"></img></div>
+                <div class="swiper-slide"><img src="photos/setup after move in.jpg" alt="new desk, a makeover" title="The new inspiration"></img></div>
+                <div class="swiper-slide"><img src="photos/setup4.jpg" alt="productivity" title="The workstation"></img></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+            </div>
             <h2>Current setup detail</h2>
             <img src="photos/setup3.jpg" alt="current" title="current"></img>
             <img src="photos/setup5.jpg" alt="current" title="current"></img>
@@ -221,4 +231,25 @@
             <h4>@2023, NguyenHaTuanNguyen - TryHard.</h4>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        });
+    </script>
 </body>
