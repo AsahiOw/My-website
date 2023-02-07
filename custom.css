@@ -172,6 +172,10 @@ a:active
     margin-left: auto;
     margin-right: auto;
 }
+.card-groups
+{
+    padding-top: 6vmin;
+}
 .card
 {
     background-color: rgba(255, 255, 255, 0.05);
@@ -409,11 +413,11 @@ a:active
 {
     margin-top: 8vmin;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 .card-swiper-buttons > button
 {
-    font-size: clamp(80px, 6vmin, 100000px);;
+    font-size: clamp(100px, 7vmin, 100000px);;
     border: transparent;
     color:white;
     background-color: transparent;
