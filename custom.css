@@ -417,7 +417,7 @@ a:active
 }
 .card-swiper-buttons > button
 {
-    font-size: clamp(60px, 7vmin, 100000px);;
+    font-size: 7vmin;
     border: transparent;
     color:white;
     background-color: transparent;
