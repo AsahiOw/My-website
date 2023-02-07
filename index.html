@@ -9,6 +9,7 @@
     <link rel="shortcut icon" type="x icon" href="photos/icon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -45,6 +46,7 @@
             <a href="https://www.facebook.com/tuannguyen.nguyenha/" target="_blank">Main Facebook</a><br>
             <a href="https://www.facebook.com/profile.php?id=100023959320740" target="_blank">Second Facebook</a><br>
             <a href="https://steamcommunity.com/profiles/76561198973940307/" target="_blank">Steam</a><br>
+            <a href="https://osu.ppy.sh/users/14759323" target="_blank">Osu!</a><br>
             <a href="https://twitter.com/TryHardVN" target="_blank">Twitter</a><br>
             <a href="https://github.com/AsahiOw" target="_blank">Github</a><br>
         </div>
@@ -63,6 +65,7 @@
             <h1>MY COMPUTER SETUP</h1>
         </div>
         <div class="setup">
+            <h2>All of my setup</h2>
             <!-- Slider main container -->
             <div class="swiper">
                 <!-- Additional required wrapper -->
@@ -114,112 +117,122 @@
             <h1>THINGS THAT I HAD DONE.</h1>
         </div>
         <div class="link_project">
-            <div class="card-groups">
-                <div class="card-group" data-index="1">
-                    <div class="little-card card">
+            <div class="card-swiper">
+                <div class="card-groups">
+                    <div class="card-group" data-index="0" data-status="active">
+                        <div class="little-card card">
 
-                    </div>
-                    <div class="big-card card">
+                        </div>
+                        <div class="big-card card">
 
+                        </div>
+                        <div class="little-card card">
+                            
+                        </div>
+                        <div class="big-card card">
+                            
+                        </div>
+                        <div class="little-card card">
+                            
+                        </div>
+                        <div class="big-card card">
+                            
+                        </div>
+                        <div class="little-card card">
+                            
+                        </div>
+                        <div class="big-card card">
+                            
+                        </div>
                     </div>
-                    <div class="little-card card">
-                        
+                    <div class="card-group" data-index="1" data-status="unknown">
+                        <div class="little-card card">
+
+                        </div>
+                        <div class="big-card card">
+
+                        </div>
+                        <div class="little-card card">
+                            
+                        </div>
+                        <div class="big-card card">
+                            
+                        </div>
+                        <div class="little-card card">
+                            
+                        </div>
+                        <div class="big-card card">
+                            
+                        </div>
+                        <div class="little-card card">
+                            
+                        </div>
+                        <div class="big-card card">
+                            
+                        </div>
                     </div>
-                    <div class="big-card card">
-                        
+                    <div class="card-group" data-index="2" data-status="unknown">
+                        <div class="little-card card">
+
+                        </div>
+                        <div class="big-card card">
+
+                        </div>
+                        <div class="little-card card">
+                            
+                        </div>
+                        <div class="big-card card">
+                            
+                        </div>
+                        <div class="little-card card">
+                            
+                        </div>
+                        <div class="big-card card">
+                            
+                        </div>
+                        <div class="little-card card">
+                            
+                        </div>
+                        <div class="big-card card">
+                            
+                        </div>
                     </div>
-                    <div class="little-card card">
-                        
-                    </div>
-                    <div class="big-card card">
-                        
-                    </div>
-                    <div class="little-card card">
-                        
-                    </div>
-                    <div class="big-card card">
-                        
+                    <div class="card-group" data-index="3" data-status="unknown">
+                        <div class="little-card card">
+
+                        </div>
+                        <div class="big-card card">
+
+                        </div>
+                        <div class="little-card card">
+                            
+                        </div>
+                        <div class="big-card card">
+                            
+                        </div>
+                        <div class="little-card card">
+                            
+                        </div>
+                        <div class="big-card card">
+                            
+                        </div>
+                        <div class="little-card card">
+                            
+                        </div>
+                        <div class="big-card card">
+                            
+                        </div>
                     </div>
                 </div>
-                <div class="card-group" data-index="2">
-                    <div class="little-card card">
-
-                    </div>
-                    <div class="big-card card">
-
-                    </div>
-                    <div class="little-card card">
-                        
-                    </div>
-                    <div class="big-card card">
-                        
-                    </div>
-                    <div class="little-card card">
-                        
-                    </div>
-                    <div class="big-card card">
-                        
-                    </div>
-                    <div class="little-card card">
-                        
-                    </div>
-                    <div class="big-card card">
-                        
-                    </div>
+                <div class="card-swiper-buttons">
+                    <button id="left-button" onclick="LeftClick()">
+                        <i class="fa fa-caret-square-o-left"></i>
+                    </button>
+                    <button id="right-button" onclick="RightClick()">
+                        <i class="fa fa-caret-square-o-right"></i>
+                    </button>
                 </div>
-                <div class="card-group" data-index="3">
-                    <div class="little-card card">
-
-                    </div>
-                    <div class="big-card card">
-
-                    </div>
-                    <div class="little-card card">
-                        
-                    </div>
-                    <div class="big-card card">
-                        
-                    </div>
-                    <div class="little-card card">
-                        
-                    </div>
-                    <div class="big-card card">
-                        
-                    </div>
-                    <div class="little-card card">
-                        
-                    </div>
-                    <div class="big-card card">
-                        
-                    </div>
-                </div>
-                <div class="card-group" data-index="4">
-                    <div class="little-card card">
-
-                    </div>
-                    <div class="big-card card">
-
-                    </div>
-                    <div class="little-card card">
-                        
-                    </div>
-                    <div class="big-card card">
-                        
-                    </div>
-                    <div class="little-card card">
-                        
-                    </div>
-                    <div class="big-card card">
-                        
-                    </div>
-                    <div class="little-card card">
-                        
-                    </div>
-                    <div class="big-card card">
-                        
-                    </div>
-                </div>
-            </div><br><br><br><br><br><br><br><br><br><br>
+            </div>
             <p class="Description">Blue Archive Cards</p>
             <p>(It might not show correctly on vertical monitor)</p><br><br><br><br>
             <img src="gif/Week 12 first semester report.gif" alt="web"><br><br>
@@ -233,23 +246,5 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <script>
-        const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        });
-    </script>
+    <script src="detail.js"></script>
 </body>

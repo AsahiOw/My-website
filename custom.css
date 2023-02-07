@@ -128,18 +128,52 @@ a:active
 }
 .card-group
 {
-    padding-left: 38.8%;
-    padding-top: 9%;
+    position: absolute;
+    transition: transform 400ms ease;
 }
+.card-group[data-status="unknown"]
+{
+    transform: scale(0);
+}
+.card-group[data-status="active"] 
+{
+    transition-delay: 300ms;
+}
+.card-group[data-status="after"]
+{
+    transform: translateX(50%) scale(0);
+}
+.card-group[data-status="before"] 
+{
+    transform: translateX(-50%) scale(0);
+}
+.card-group[data-status="becoming-active-from-after"] 
+{
+    transform: translateX(50%) scale(0);
+    transition: none;
+}
+  
+.card-group[data-status="becoming-active-from-before"] 
+{
+    transform: translateX(-50%) scale(0);
+    transition: none;
+}
+.card-groups,
 .card-group,
 .card
 {
     aspect-ratio: 5 / 7;
 }
+.card-groups,
 .card-group,
 .big-card
 {
     width: 30vmin;
+}
+.card-groups
+{
+    padding-left: 38.8%;
+    padding-top: 4%;
 }
 .card
 {
@@ -157,49 +191,49 @@ a:active
     width: 12vmin;
     border-radius: 2vmin;
     left: 50%;
-    transform: translate(-50%);
-    margin-top: 6.6%;
+    transform: translate(-50%, -50%);
+    top: 50%;
 }
 /*yuuka*/
-.card-group[data-index="1"] > .little-card:nth-child(1)
+.card-group[data-index="0"] > .little-card:nth-child(1)
 {
     background-image: url(Yuuka\ card/Sport\ Yuuka4.png);
     background-size: cover;
 }
-.card-group[data-index="1"] > .big-card:nth-child(2)
+.card-group[data-index="0"] > .big-card:nth-child(2)
 {
     transform: translateX(-10%) rotate(-1deg);
     background-image: url(Yuuka\ card/Normal\ Yuuka2.png);
     background-size: cover;
 }
-.card-group[data-index="1"] > .little-card:nth-child(3)
+.card-group[data-index="0"] > .little-card:nth-child(3)
 {
     background-image: url(Yuuka\ card/Sport\ Yuuka3.png);
     background-size: cover;
 }
-.card-group[data-index="1"] > .big-card:nth-child(4)
+.card-group[data-index="0"] > .big-card:nth-child(4)
 {
     transform: rotate(2deg);
     background-image: url(Yuuka\ card/Normal\ Yuuka1.png);
     background-size: cover;
 }
-.card-group[data-index="1"] > .little-card:nth-child(5)
+.card-group[data-index="0"] > .little-card:nth-child(5)
 {
     background-image: url(Yuuka\ card/Normal\ Yuuka4.png);
     background-size: cover;
 }
-.card-group[data-index="1"] > .big-card:nth-child(6)
+.card-group[data-index="0"] > .big-card:nth-child(6)
 {
     transform: translateX(-6%) rotate(-3deg);
     background-image: url(Yuuka\ card/Sport\ Yuuka2.png);
     background-size: cover;
 }
-.card-group[data-index="1"] > .little-card:nth-child(7)
+.card-group[data-index="0"] > .little-card:nth-child(7)
 {
     background-image: url(Yuuka\ card/Normal\ Yuuka3.png);
     background-size: cover;
 }
-.card-group[data-index="1"] > .big-card:nth-child(8)
+.card-group[data-index="0"] > .big-card:nth-child(8)
 {
     transform: translate(10%, 3%) rotate(5deg);
     background-image: url(Yuuka\ card/Sport\ Yuuka1.png);
@@ -207,45 +241,45 @@ a:active
 }
 
 /*hoshino*/
-.card-group[data-index="2"] > .little-card:nth-child(1)
+.card-group[data-index="1"] > .little-card:nth-child(1)
 {
     background-image: url(Hoshino\ card/HoshinoS3.png);
     background-size: cover;
 }
-.card-group[data-index="2"] > .big-card:nth-child(2)
+.card-group[data-index="1"] > .big-card:nth-child(2)
 {
     transform: translateX(-10%) rotate(-1deg);
     background-image: url(Hoshino\ card/Hoshino4.png);
     background-size: cover;
 }
-.card-group[data-index="2"] > .little-card:nth-child(3)
+.card-group[data-index="1"] > .little-card:nth-child(3)
 {
     background-image: url(Hoshino\ card/HoshinoS2.png);
     background-size: cover;
 }
-.card-group[data-index="2"] > .big-card:nth-child(4)
+.card-group[data-index="1"] > .big-card:nth-child(4)
 {
     transform: rotate(2deg);
     background-image: url(Hoshino\ card/Hoshino1.png);
     background-size: cover;
 }
-.card-group[data-index="2"] > .little-card:nth-child(5)
+.card-group[data-index="1"] > .little-card:nth-child(5)
 {
     background-image: url(Hoshino\ card/Hoshino2.png);
     background-size: cover;
 }
-.card-group[data-index="2"] > .big-card:nth-child(6)
+.card-group[data-index="1"] > .big-card:nth-child(6)
 {
     transform: translateX(-6%) rotate(-3deg);
     background-image: url(Hoshino\ card/HoshinoS4.png);
     background-size: cover;
 }
-.card-group[data-index="2"] > .little-card:nth-child(7)
+.card-group[data-index="1"] > .little-card:nth-child(7)
 {
     background-image: url(Hoshino\ card/Hoshino3.png);
     background-size: cover;
 }
-.card-group[data-index="2"] > .big-card:nth-child(8)
+.card-group[data-index="1"] > .big-card:nth-child(8)
 {
     transform: translate(10%, 3%) rotate(5deg);
     background-image: url(Hoshino\ card/HoshinoS1.png);
@@ -253,45 +287,45 @@ a:active
 }
 
 /*shun*/
-.card-group[data-index="3"] >.little-card:nth-child(1)
+.card-group[data-index="2"] >.little-card:nth-child(1)
 {
     background-image: url(Shun\ card/Lshun4.png);
     background-size: cover;
 }
-.card-group[data-index="3"] >.big-card:nth-child(2)
+.card-group[data-index="2"] >.big-card:nth-child(2)
 {
     transform: translateX(-10%) rotate(-1deg);
     background-image: url(Shun\ card/Shun3.png);
     background-size: cover;
 }
-.card-group[data-index="3"] >.little-card:nth-child(3)
+.card-group[data-index="2"] >.little-card:nth-child(3)
 {
     background-image: url(Shun\ card/Lshun3.png);
     background-size: cover;
 }
-.card-group[data-index="3"] >.big-card:nth-child(4)
+.card-group[data-index="2"] >.big-card:nth-child(4)
 {
     transform: rotate(2deg);
     background-image: url(Shun\ card/Shun1.png);
     background-size: cover;
 }
-.card-group[data-index="3"] >.little-card:nth-child(5)
+.card-group[data-index="2"] >.little-card:nth-child(5)
 {
     background-image: url(Shun\ card/Shun4.png);
     background-size: cover;
 }
-.card-group[data-index="3"] >.big-card:nth-child(6)
+.card-group[data-index="2"] >.big-card:nth-child(6)
 {
     transform: translateX(-6%) rotate(-3deg);
     background-image: url(Shun\ card/Lshun2.png);
     background-size: cover;
 }
-.card-group[data-index="3"] >.little-card:nth-child(7)
+.card-group[data-index="2"] >.little-card:nth-child(7)
 {
     background-image: url(Shun\ card/Shun2.png);
     background-size: cover;
 }
-.card-group[data-index="3"] >.big-card:nth-child(8)
+.card-group[data-index="2"] >.big-card:nth-child(8)
 {
     transform: translate(10%, 3%) rotate(5deg);
     background-image: url(Shun\ card/Lshun1.png);
@@ -299,45 +333,45 @@ a:active
 }
 
 /*azusa*/
-.card-group[data-index="4"] >.little-card:nth-child(1)
+.card-group[data-index="3"] >.little-card:nth-child(1)
 {
     background-image: url(Azusa\ card/AzusaS2.png);
     background-size: cover;
 }
-.card-group[data-index="4"] >.big-card:nth-child(2)
+.card-group[data-index="3"] >.big-card:nth-child(2)
 {
     transform: translateX(-10%) rotate(-1deg);
     background-image: url(Azusa\ card/Azusa2.png);
     background-size: cover;
 }
-.card-group[data-index="4"] >.little-card:nth-child(3)
+.card-group[data-index="3"] >.little-card:nth-child(3)
 {
     background-image: url(Azusa\ card/AzusaS4.png);
     background-size: cover;
 }
-.card-group[data-index="4"] >.big-card:nth-child(4)
+.card-group[data-index="3"] >.big-card:nth-child(4)
 {
     transform: rotate(2deg);
     background-image: url(Azusa\ card/Azusa1.png);
     background-size: cover;
 }
-.card-group[data-index="4"] >.little-card:nth-child(5)
+.card-group[data-index="3"] >.little-card:nth-child(5)
 {
     background-image: url(Azusa\ card/Azusa3.png);
     background-size: cover;
 }
-.card-group[data-index="4"] >.big-card:nth-child(6)
+.card-group[data-index="3"] >.big-card:nth-child(6)
 {
     transform: translateX(-6%) rotate(-3deg);
     background-image: url(Azusa\ card/AzusaS3.png);
     background-size: cover;
 }
-.card-group[data-index="4"] >.little-card:nth-child(7)
+.card-group[data-index="3"] >.little-card:nth-child(7)
 {
     background-image: url(Azusa\ card/Azusa4.png);
     background-size: cover;
 }
-.card-group[data-index="4"] >.big-card:nth-child(8)
+.card-group[data-index="3"] >.big-card:nth-child(8)
 {
     transform: translate(10%, 3%) rotate(5deg);
     background-image: url(Azusa\ card/AzusaS1.png);
@@ -361,17 +395,32 @@ a:active
 }
 .card-group:hover > .little-card:nth-child(1)
 {
-    transform: translate(200%,-110%) rotate(-15deg);
+    transform: translate(200%,-160%) rotate(-15deg);
 }
 .card-group:hover > .little-card:nth-child(3)
 {
-    transform: translate(160%,220%) rotate(15deg);
+    transform: translate(160%,170%) rotate(15deg);
 }
 .card-group:hover > .little-card:nth-child(5)
 {
-    transform: translate(-200%,-120%) rotate(15deg);
+    transform: translate(-200%,-170%) rotate(15deg);
 }
 .card-group:hover > .little-card:nth-child(7)
 {
-    transform: translate(-280%,190%) rotate(-15deg);
+    transform: translate(-280%,140%) rotate(-15deg);
+}
+.card-swiper-buttons
+{
+    margin-top: 8vmin;
+    display: flex;
+    justify-content: space-around;
+    padding: 0vmin 55vmin;
+}
+.card-swiper-buttons > button
+{
+    font-size: 6vmin;
+    border: transparent;
+    color:white;
+    background-color: transparent;
+    cursor: pointer;
 }
