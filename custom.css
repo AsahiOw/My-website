@@ -169,11 +169,8 @@ a:active
 .big-card
 {
     width: 30vmin;
-}
-.card-groups
-{
-    padding-left: 38.8%;
-    padding-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .card
 {
@@ -183,7 +180,6 @@ a:active
 }
 .big-card
 {
-    width: 30vmin;
     border-radius: 1vmin;
 }
 .little-card
@@ -414,11 +410,10 @@ a:active
     margin-top: 8vmin;
     display: flex;
     justify-content: space-around;
-    padding: 0vmin 55vmin;
 }
 .card-swiper-buttons > button
 {
-    font-size: 6vmin;
+    font-size: clamp(80px, 6vmin, 100000px);;
     border: transparent;
     color:white;
     background-color: transparent;
