@@ -22,7 +22,7 @@ let activeIndex = 0;
 
 const groups = document.getElementsByClassName("card-group");
 
-const RightClick = () => {
+const LeftClick = () => {
   const nextIndex = activeIndex + 1 <= groups.length - 1 ? activeIndex + 1 : 0;
   
   const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),
@@ -38,7 +38,7 @@ const RightClick = () => {
   });
 }
 
-const LeftClick = () => {
+const RightClick = () => {
   const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : groups.length - 1;
   
   const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),
