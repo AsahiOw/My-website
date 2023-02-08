@@ -1,3 +1,5 @@
+alert("Hey! Nice to meet ya!")
+
 // sticky effect for header
 window.onscroll = function() {stickyEffect()};
 var header = document.getElementById("stickyHeader");
