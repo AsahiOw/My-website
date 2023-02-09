@@ -73,6 +73,7 @@ body
 {
     padding-left: 15%;
     padding-right: 15%; 
+    overflow-x: hidden;
 }
 a
 {
@@ -422,4 +423,19 @@ a:active
     color:white;
     background-color: transparent;
     cursor: pointer;
+}
+#image-track > .image
+{
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+}
+#image-track
+{
+    display: flex;
+    gap: 2vmin;
+    user-select: none;
+    transform: translate(0%, 0%);
+    user-select: none;
 }
