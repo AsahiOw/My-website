@@ -553,11 +553,17 @@ a:active
 /*blank*/
 .icon_group:hover > .icon:nth-child(17)
 {
-    transform: translate(-50%, -21%);
     background-color: rgba(0,0,0,0);
     color: rgba(0,0,0,0);
-    width: 85vmin;
+    transform: translate(-16%, -11%);
 }
+.icon_group:hover > .icon:nth-child(18)
+{
+    background-color: rgba(0,0,0,0);
+    color: rgba(0,0,0,0);
+    transform: translate(-84%, -11%);
+}
+
 .icon-class
 {
     padding-top: 45vmin;
