@@ -558,3 +558,7 @@ a:active
     color: rgba(0,0,0,0);
     width: 85vmin;
 }
+.icon-class
+{
+    padding-top: 45vmin;
+}
