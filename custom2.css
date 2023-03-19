@@ -1,15 +1,15 @@
+html, body{
+    margin: 0;
+    padding-top: 0;
+    overflow-x: hidden;
+}
 body
 {
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
-    padding-top: 0;
     background: linear-gradient(to right, #141e30, #243b55);
     background-repeat:no-repeat ;
     color: #fbefcc;
     text-align: center;
-    padding-left: 15%;
-    padding-right: 15%; 
-    overflow-x: hidden;
 }
 a
 {
@@ -22,6 +22,10 @@ a:hover
 a:active
 {
     color: #fbefcc;
+}
+.link_project
+{
+    padding-top: 5%;
 }
 .link_project img
 {
@@ -331,6 +335,7 @@ a:active
     height: 56vmin;
     object-fit: cover;
     object-position: 100% center;
+
 }
 #image-track
 {
@@ -338,7 +343,8 @@ a:active
     gap: 2vmin;
     user-select: none;
     transform: translate(0%, 0%);
-    user-select: none;
+    padding-left: 20%;
+    
 }
 .icon
 {
