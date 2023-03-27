@@ -83,7 +83,7 @@ window.ontouchmove = e => handleOnMove(e.touches[0]);
 
 
 
-
+// name card glitch effect
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 let interval = null;
