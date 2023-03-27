@@ -584,12 +584,12 @@ background-size: 500%;
 }
 
 60.0001% { /* -- View 4 -- */
-    background-position: 0% -10%;
+    background-position: 0% 0%;
     background-size: 300%;
 }
 
 80% {
-    background-position: 15% -6%;
+    background-position: 15% 6%;
     background-size: 300%;
 }
 
