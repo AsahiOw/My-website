@@ -1,3 +1,4 @@
+alert("Noted: The content might not load correctly depend on the Internet connection. I dont want to use loading screen so this is what I have.")
 //left and right function for Blue Archive card
 let activeIndex = 0;
 
