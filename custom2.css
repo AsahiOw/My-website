@@ -488,7 +488,7 @@ box-sizing: border-box;
 }
 .screen {
 left: 50%;
-transform: translate(-50%, -11%);
+transform: translate(-50%, 0%);
 width: 70%;
 display: flex;
 border: 3px solid rgb(var(--primary-rgb) / 80%);
@@ -629,7 +629,7 @@ gap: 4rem;
 position: relative;
 z-index: 3;
 margin: 1rem;
-padding-bottom: 6rem;
+padding-bottom: 5%;
 border: 1px solid rgb(var(--primary-rgb) / 50%);
 border-radius: 0.6rem;
 }
@@ -673,7 +673,7 @@ text-transform: uppercase;
 
 .screen > .screen-content > .screen-user > .name {
 position: relative;
-font-size: 4.25rem;
+font-size: 7vmin;
 }
 
 .screen > .screen-content > .screen-user > .name:before,
@@ -696,16 +696,6 @@ top: 45%;
 left: -1.5rem;  
 }
 
-.screen > .screen-content > .screen-user > .link:is(:hover, :focus) {  
-text-decoration: underline; 
-}
-
-@media(max-width: 700px) {
-.screen {
-    scale: 0.6;
-    margin-bottom: 0rem;
-}
-}
 
 /* -- Blob effect -- */
 
