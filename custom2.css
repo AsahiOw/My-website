@@ -32,6 +32,8 @@ a:active
     width: 70%;
     height: auto;
 }
+
+/*blue archive card */
 .card-group
 {
     position: absolute;
@@ -329,6 +331,8 @@ a:active
     background-color: transparent;
     cursor: pointer;
 }
+
+/*Image track*/
 #image-track > .image
 {
     width: 40vmin;
@@ -346,6 +350,7 @@ a:active
     padding-left: 20%;
     
 }
+/*Playing with trans*/
 .icon
 {
     width: 50vmin;
@@ -475,6 +480,8 @@ a:active
 {
     padding-top: 45vmin;
 }
+
+/*Name card*/
 :root {
     --blue-rgb: 33 150 243;
     --primary-rgb: var(--blue-rgb);
@@ -715,6 +722,8 @@ to {
 {
     padding-top: 10%;
 }
+
+/*spinning loading*/
 .spin,
 .Spinning_loader,
 .Spinning_loader2,
