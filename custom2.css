@@ -715,51 +715,63 @@ to {
 {
     padding-top: 10%;
 }
-
+.spin,
+.Spinning_loader,
+.Spinning_loader2,
+.Spinning_loader3,
+.Spinning_loader4
+{
+    margin-left: auto;
+    margin-right: auto;
+}
 .Spinning_loader{
-    border: 16px solid #DAE2F8; 
-    border-top: 16px solid #D6A4A4; 
+    border: 1.7vmin solid #DAE2F8; 
+    border-top: 1.7vmin solid #D6A4A4; 
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 12.75vmin;
+    height: 12.75vmin;
     animation: spin 2s linear infinite;
     position: absolute;
-    left: 15%;
+    left: 20%;
     text-align: center;
+    font-size: 1.5vmin;
 }
 
 .Spinning_loader2{
-    border: 16px solid #ED4264; 
-    border-top: 16px solid #FFEDBC; 
+    border: 1.7vmin solid #ED4264; 
+    border-top: 1.7vmin solid #FFEDBC; 
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 12.75vmin;
+    height: 12.75vmin;
     animation: spin 1s linear infinite;
     position: absolute;
-    left: 33%;
+    left: 37.5%;
     text-align: center;
+    font-size: 1.5vmin;
 }
 .Spinning_loader3{
-    border: 16px solid #283048; 
-    border-top: 16px solid #859398; 
+    border: 1.7vmin solid #283048; 
+    border-top: 1.7vmin solid #859398; 
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 12.75vmin;
+    height: 12.75vmin;
     animation: spin 0.5s linear infinite;
     position: absolute;
-    left: 51%;
+    left: 55%;
     text-align: center;
+    font-size: 1.5vmin;
 }
 .Spinning_loader4{
-    border: 16px solid #3D7EAA; 
-    border-top: 16px solid #FFE47A; 
+    border: 1.7vmin solid #3D7EAA; 
+    border-top: 1.7vmin solid #FFE47A; 
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 12.75vmin;
+    height: 12.75vmin;
     animation: spin 0.2s linear infinite;
     position: absolute;
-    left: 69%;
+    left: 72.5%;
     text-align: center;
+    font-size: 1.5vmin;
 }
 @keyframes spin {
     0% { transform: rotate(0deg); }
